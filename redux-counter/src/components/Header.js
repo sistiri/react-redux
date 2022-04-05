@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { authActions } from "../store";
+import { authActions } from "../store/auth";
 
 import classes from "./Header.module.css";
 
@@ -10,7 +10,7 @@ const Header = () => {
   const logoutHandler = () => {
     dispatch(authActions.logout())
   }
-  
+
   return (
     <header className={classes.header}>
       <h1>Redux Auth</h1>
